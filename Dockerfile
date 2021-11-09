@@ -1,4 +1,5 @@
 FROM cimg/python:3.8-node
+COPY clean-home /usr/bin/clean-home
 COPY get-aws-cli /usr/bin/get-aws-cli
 RUN get-aws-cli
 COPY get-terraform /usr/bin/get-terraform
@@ -10,3 +11,4 @@ RUN get-helm
 COPY get-jq /usr/bin/get-jq
 RUN get-jq
 COPY show-stats /usr/bin/show-stats
+RUN clean-home
