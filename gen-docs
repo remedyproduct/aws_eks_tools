@@ -1,0 +1,10 @@
+#!/bin/bash
+
+export TERRAFORM_VERSION=$(terraform version)
+export AWS_CLI_VERSION=$(aws --version)
+export CURL_VERSION=$(curl --version)
+export KUBECTL_VERSION=$(kubectl version)
+export HELM_VERSION=$(helm version)
+export JQ_VERSION=$(jq --version)
+
+envsubst < README.tpl > README.md
