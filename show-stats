@@ -18,3 +18,5 @@ echo "=========="
 echo "== jq =="
 echo "$(jq --version)"
 echo "========"
+
+ls -la
