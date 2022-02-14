@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export TERRAGRUNT_VERSION=v0.36.1
+curl -LO https://github.com/gruntwork-io/terragrunt/releases/download/${TERRAGRUNT_VERSION}/terragrunt_linux_amd64
+chmod +x ./terragrunt_linux_amd64
+sudo mv ./terragrunt_linux_amd64 /usr/bin/terragrunt

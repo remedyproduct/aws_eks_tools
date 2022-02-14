@@ -10,5 +10,7 @@ COPY get-helm /usr/bin/get-helm
 RUN get-helm
 COPY get-jq /usr/bin/get-jq
 RUN get-jq
+COPY get-terragrunt /usr/bin/get-terragrunt
+RUN get-terragrunt
 COPY show-stats /usr/bin/show-stats
 RUN clean-home
